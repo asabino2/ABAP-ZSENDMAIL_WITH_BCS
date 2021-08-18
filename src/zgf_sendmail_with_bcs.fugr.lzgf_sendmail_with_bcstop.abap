@@ -1,0 +1,3 @@
+FUNCTION-POOL ZGF_SENDMAIL_WITH_BCS.        "MESSAGE-ID ..
+
+* INCLUDE LZGF_SENDMAIL_WITH_BCSD...         " Local class definition

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Send Email with BCS</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZGF_SENDMAIL_WITH_BCSTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZGF_SENDMAIL_WITH_BCS</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_FBC_SEND_MAIL_WITH_BCS</FUNCNAME>
+     <SHORT_TEXT>Envio de email via BCS</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>SAPUSER_SENDER</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SY-UNAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>MAIL_SENDER</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>AD_SMTPADR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>REPLY_TO</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>AD_SMTPADR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>REQUESTED_STATUS</PARAMETER>
+       <DEFAULT>&apos;E&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BCS_RQST</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>DOCUMENTS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZCTBC_BDC_EMAIL_DOCUMENTS_ROW</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>RECIPIENTS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZCTBC_BDC_EMAIL_RECIPIENTS_ROW</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>DO_COMMIT_WORK</PARAMETER>
+       <DEFAULT>&apos;X&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FLAG</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ERRO_ENVIO</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>SAPUSER_SENDER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nome do usuário</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>MAIL_SENDER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Endereço de e-mail</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>REPLY_TO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Endereço de e-mail</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>REQUESTED_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Status solicitado</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DOCUMENTS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Categoria de tabelas para documents</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RECIPIENTS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Categoria de tabela para recipients</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DO_COMMIT_WORK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag geral</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ERRO_ENVIO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Erro de envio</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
